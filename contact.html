@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            height: 80vh;
+            width: 1390px;
+            background-color: #1817187a;
+        }
+        h1 {
+            color:#303841
+        }
+        .container {
+            background: #7c4848a2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: white;
+            background-color: #45484b;
+            border: none;
+            border-radius: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .message-label, .name-label, .email-label {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            color: white;
+        }
+        .message-textarea, .name-input, .email-input {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            height: 150px;
+            margin-left: -11px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 35px;
+            resize: none;
+            background-color : #f0f0f0;
+        }
+        .message-textarea::placeholder, .name-input::placeholder, .email-input::placeholder {
+            color: #aaa;
+        }
+        .nav-links {
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About</a>
+        </div>
+        <h1>Contact Me!</h1>
+        <form action="send_email.php" method="post">
+            <div>
+                <label for="name" class="name-label">Name:</label>
+                <input type="text" id="name" class="name-input" name="name" placeholder="Enter your name here..." required>
+            </div>
+            <div>
+                <label for="email" class="email-label">Email:</label>
+                <input type="email" id="email" class="email-input" name="email" placeholder="Enter your email here..." required>
+            </div>
+            <div>
+                <label for="message" class="message-label">Message:</label>
+                <textarea id="message" class="message-textarea" name="message" placeholder="Enter your message here..." required></textarea>
+            </div>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

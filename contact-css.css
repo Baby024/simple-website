@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles/contact-css.css">
-    <link rel="icon" href="Images/message.jpeg" type="image/x-icon">
-</head>
-<style>
-    body {
+body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
@@ -78,30 +69,3 @@ h1 {
 .nav-links a:hover {
     text-decoration: underline;
 }
-</style>
-<body>
-    <div class="container">
-        <div class="nav-links">
-            <h1>Welcome To My Contact Page</h1>
-            <a href="index.html" class="button">Home</a>
-            <a href="about.html" class="button">About</a>
-        </div>
-        <h1>Contact Me!</h1>
-        <form action="send_email.php" method="post">
-            <div>
-                <label for="name" class="name-label">Name:</label>
-                <input type="text" id="name" class="name-input" name="name" placeholder="Enter your name here..." required>
-            </div>
-            <div>
-                <label for="email" class="email-label">Email:</label>
-                <input type="email" id="email" class="email-input" name="email" placeholder="Enter your email here..." required>
-            </div>
-            <div>
-                <label for="message" class="message-label">Message:</label>
-                <textarea id="message" class="message-textarea" name="message" placeholder="Enter your message here..." required></textarea>
-            </div>
-            <button type="submit" class="button">Submit</button>
-        </form>
-    </div>
-</body>
-</html>
